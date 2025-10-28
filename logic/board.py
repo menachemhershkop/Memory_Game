@@ -16,4 +16,4 @@ def create_card_boards(cards : list[str], board):
     #     return "incorrect board"
 def list_printed(mat:list[list]):
     for i in mat:
-        print(i)
+        print("|".join(i))
