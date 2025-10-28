@@ -1,5 +1,5 @@
 import random
-def create_cards(num_of_cards:int=5):
+def create_cards(num_of_cards:int=4):
     ALPHABET_LIST = [chr(i) for i in range(65, 90)]
     cuple_cards=[]
     for i in range(num_of_cards):
