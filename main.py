@@ -19,7 +19,7 @@ def start_game(num : int =4):
                     if 1 <= value <= num:
                         return value - 1
                     else:
-                        print(f"The number nust to be bwtwine 1 to {num}.")
+                        print(f"The number nust to be btwine 1 to {num}.")
                 except ValueError:
                     print("Number only")
 
