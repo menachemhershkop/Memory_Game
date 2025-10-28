@@ -6,19 +6,30 @@ def start_game(num : int =4):
     main_board=create_board(num)
     cards=swap_cards(create_cards(num*num // 2))
     hide_board=create_card_boards(cards,main_board)
-    print(f"Board size: {size}x{size}\n")
+    print(f"Board size: {num}x{num}\n")
 
     while True:
         list_printed(main_board)
         print("\nChoice 2 cards by rwo and col")
 
-        r1 = int(input("Row 1: ")) - 1
-        c1 = int(input("Column 1: ")) - 1
+        def get_valid_input(prompt: str) -> int:
+            while True:
+                try:
+                    value = int(input(prompt))
+                    if 1 <= value <= num:
+                        return value - 1
+                    else:
+                        print(f"The number nust to be bwtwine 1 to {num}.")
+                except ValueError:
+                    print("Number only")
+
+        r1 = get_valid_input("Row 1: ")
+        c1 = get_valid_input("Column 1: ")
         reveal_card(r1, c1, main_board,hide_board)
         list_printed(main_board)
 
-        r2 = int(input("Row 2: ")) - 1
-        c2 = int(input("Column 2: ")) - 1
+        r2 = get_valid_input("Row 2: ")
+        c2 = get_valid_input("Column 2: ")
         reveal_card(r2, c2, main_board,hide_board)
         list_printed(main_board)
 
