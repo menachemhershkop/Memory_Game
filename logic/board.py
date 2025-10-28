@@ -18,4 +18,3 @@ def creat_card_boards(cards : list[str], board):
         return game_board
     else:
         return "incorrect board"
-print(creat_card_boards(["1","2","3","4"],creat_board()))
