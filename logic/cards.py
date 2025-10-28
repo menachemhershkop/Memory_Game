@@ -1,6 +1,6 @@
 import random
 
-from board import create_card_boards, create_board
+# from board import create_card_boards, create_board
 
 
 def create_cards(num_of_cards:int=4):
