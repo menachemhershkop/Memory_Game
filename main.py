@@ -6,4 +6,4 @@ if __name__=="__main__":
     # cards=swap_cards(create_cards(8))
     # print(cards)
     # print(create_card_boards(cards,create_board()))
-    start_game(int(input("Enter number of cards: ")))
+    start_game()

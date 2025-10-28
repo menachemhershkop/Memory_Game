@@ -10,11 +10,14 @@ def start_game(num : int =4):
     print(main_board)
     column=int(input("Enter column number: "))
     row=int(input("Enter row number: "))
-    first_guses=lets_gases(column,row,hide_board)
+    first_gases=lets_gases(column,row,hide_board)
     column = int(input("Enter column number: "))
     row=int(input("Enter row number: "))
-    second_guses=lets_gases(column,row,hide_board)
+    second_gases=lets_gases(column,row,hide_board)
     show_hide(column,row,hide_board,main_board)
-    if first_guses == second_guses:
+    print(hide_board)
+    if first_gases == second_gases:
+        print(first_gases,second_gases)
+
 
 
